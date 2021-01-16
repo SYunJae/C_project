@@ -1,24 +1,38 @@
 ﻿#include "pch.h"
+#include "CL_project_Header.h"
 
 
-int main(int argc, char* argv[], char *envp[])
+int main(int argc, char* argv[], char* envp[])
 {
-	if (argc > 0)
+	int count = 1;
+	int TitleNUM;
+	do
 	{
-		int cnt = 0;
-		while (argv[cnt] != NULL)
+		if (count & 1)
 		{
-			printf(" --- %s\n", argv[cnt]);
-			cnt++;
+			puts(" = 예제 Title =");
+			puts("┌------------------------------------┐");
+			puts("│ 00_실행 중지 번호                  │");
+			puts("│ 01_메인 함수의 매개변수 출력 예제  │");
+			puts("│ 02_매크로(Macro) 예제              │");
+			puts("└------------------------------------┘");
+		} count++;
+
+		printf("실행하고 싶은 예제 번호를 입력하세요. NUM = ");
+		scanf_s("%d", &TitleNUM);
+		NEW_LINE;
+
+		switch (TitleNUM)
+		{
+			case 1:		Main_Function(argc, argv, envp);	NEW_LINE	 break;
+			case 2:		Macro_main();						NEW_LINE	 break;
+
+
+			default:
+			break;
 		}
 
-		cnt = 0;
-		while (envp[cnt] != NULL)
-		{
-			printf(" ~~~ %s\n", envp[cnt]);
-			cnt++;
-		}
-	}
+	} while (TitleNUM != 0);
 
 	return 0;
 }
