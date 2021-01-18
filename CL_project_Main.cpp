@@ -10,22 +10,26 @@ int main(int argc, char* argv[], char* envp[])
 	{
 		if (count & 1)
 		{
-			puts(" = 예제 Title =");
-			puts("┌------------------------------------┐");
-			puts("│ 00_실행 중지 번호                   │");
-			puts("│ 01_메인 함수의 매개변수 출력 예제    │");
-			puts("│ 02_매크로(Macro) 예제               │");
-			puts("└------------------------------------┘");
-		} count++;
+			puts(" = Example Title =");
+			puts("┌-------------------------------------------┐");
+			puts("│ 00_Quit Num of Execution                  │");
+			puts("│ 01_EX of Main Function's Parameters       │");
+			puts("│ 02_EX of Variable & Data Type             │");
+			puts("│ 03_EX of Macro                            │");
+			puts("└-------------------------------------------┘");
+		}
+		count++;
 
-		printf("실행하고 싶은 예제 번호를 입력하세요. NUM = ");
+		printf(" Enter the EX Digit to Execute : ");
 		scanf_s("%d", &TitleNUM);
 		NEW_LINE;
 
 		switch (TitleNUM)
 		{
-			case 1:		Main_Function(argc, argv, envp);	NEW_LINE	 break;
-			case 2:		Macro_main();				NEW_LINE	 break;
+			case 1:   Main_Function(argc, argv, envp);  NEW_LINE   break;
+			case 2:   Variable_EX();                    NEW_LINE
+				      DataType_EX();                    NEW_LINE   break;
+			case 3:   Macro_EX();                       NEW_LINE   break;
 
 
 			default:

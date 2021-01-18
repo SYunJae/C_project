@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="CL_project_Main.cpp" />
+    <ClCompile Include="00_Main_Function.cpp" />
+    <ClCompile Include="21_Macro.cpp" />
+    <ClCompile Include="01_Variable_n_DataType.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="CL_project_Header.h" />
+  </ItemGroup>
+</Project>
