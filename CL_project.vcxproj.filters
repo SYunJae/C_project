@@ -6,6 +6,9 @@
     <ClCompile Include="00_Main_Function.cpp" />
     <ClCompile Include="21_Macro.cpp" />
     <ClCompile Include="01_Variable_n_DataType.cpp" />
+    <ClCompile Include="02_Constant.cpp" />
+    <ClCompile Include="03_TypeCasting.cpp" />
+    <ClCompile Include="04_Operator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
