@@ -52,7 +52,7 @@ int main(int argc, char* argv[], char* envp[])
 #else
 
 
-//	 #include <stdio.h>
+	 #include <stdio.h>
 	 #include <cstdlib>
 
 	 
@@ -60,7 +60,7 @@ int main(int argc, char* argv[], char* envp[])
 
 	 int variable = 0;
 	 
-	 int main(int argc, char * argv[], char * envp[])
+	 int main()
 	 {
 	 	 static double num1 = 2.1, num2 = 3.0;
 	 	 
@@ -104,7 +104,6 @@ int main(int argc, char* argv[], char* envp[])
 		 printf(" Dinamic Var. arr[0] : 0x%p \n", &arr[0]);
 		 printf(" Dinamic Var. arr[1] : 0x%p \n", &arr[1]);
 		 printf(" Dinamic Var. arr[2] : 0x%p \n", &arr[2]);
-
 */
 
 #endif

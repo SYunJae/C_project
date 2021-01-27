@@ -256,7 +256,7 @@ void Operator_EX()
 	*/
 		NEW_LINE;
 	}
-#if 1
+#if 0
 ///    ┏━━━━━━━━━━━┓
 ///    ┃ Bit & Shift 연산예제 ┃
 ///    ┗━━━━━━━━━━━┛
